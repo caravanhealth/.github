@@ -1,0 +1,5 @@
+{
+    "name": "Snyk Security Scan",
+    "description": "Workflow for running the Snyk security scan on PRs and pushes to the default repository branch",
+    "iconName": "octicon shield-lock"
+}
