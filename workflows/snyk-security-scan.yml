@@ -3,7 +3,7 @@ name: Run the Snyk security scan
 on:
   workflow_call:
     secrets:
-      token:
+      SNYK_TOKEN:
         required: true
       
 jobs:
@@ -14,5 +14,5 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/node@master
         env:
-          SNYK_TOKEN: ${{ secrets.token }}
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
           
