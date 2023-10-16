@@ -8,6 +8,6 @@ on:
       
 jobs:
   security-scan:
-    uses: caravanhealth/.github/workflows/snyk-security-scan.yml@main
+    uses: caravanhealth/github-workflows/.github/workflows/snyk-security-scan.yml@main
     secrets:
-      token: ${{ secrets.SNYK_TOKEN }}
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
