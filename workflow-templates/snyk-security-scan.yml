@@ -12,5 +12,6 @@ jobs:
     with:
       continue-on-error: true
       report-results: ${{ github.event_name != 'pull_request' }}
+      code-type: "node"
     secrets:
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
